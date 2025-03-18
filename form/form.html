@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Форма</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div>
+            <h1>Форма</h1>
+            <form action="#">
+                <label><input placeholder="ФИО" /></label>
+                <fieldset>
+                    <legend>Пол</legend>
+                    <label>
+                        <input type="radio" name="sex" value="female" checked />
+                        Жен.
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="male" />
+                        Муж.
+                    </label>
+                </fieldset>
+                <label>
+                    <input type="password" placeholder="Пароль" />
+                </label>
+                <br />
+                <select title="country">
+                    <option value="" disabled selected hidden>Страна</option>
+                    <option>Россия</option>
+                    <option>United Kingdom</option>
+                </select>
+                <fieldset>
+                    <legend>Выберите:</legend>
+                    <label> <input type="checkbox" />Мороженное </label>
+                    <label> <input type="checkbox" />Мясо </label>
+                    <label> <input type="checkbox" />Салат </label>
+                </fieldset>
+                <textarea
+                    placeholder="Что вы любите, напишите..."
+                    rows="5"
+                    cols="20"
+                ></textarea>
+                <br />
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </body>
+</html>
